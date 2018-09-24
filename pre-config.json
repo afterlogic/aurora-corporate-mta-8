@@ -11,6 +11,9 @@
 			"AllowMobile": true,
 			"ThemeList": ["Default","DeepForest","Funny"]
 		},
+		"AdminPanelWebclient": {
+			"EntitiesOrder": ["Tenant", "Domain", "User", "MailingList"]
+		},
 		"DropboxAuthWebclient": {
 			"Scopes": "auth"
 		},

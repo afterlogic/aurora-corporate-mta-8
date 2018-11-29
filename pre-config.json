@@ -11,7 +11,8 @@
 		},
 		"CoreWebclient": {
 			"HeaderModulesOrder": ["mail", "contacts", "calendar", "files"],
-			"EntryModule": "mail",
+			"DefaultAnonymScreenHash": "login",
+			"DefaultUserScreenHash": "mail",
 			"AllowMobile": true,
 			"ThemeList": ["Default","DeepForest","Funny"]
 		},

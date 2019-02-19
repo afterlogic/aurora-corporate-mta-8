@@ -71,6 +71,9 @@
 		},
 		"OverrideUserSettings": {
 			"Disabled": true
+		},
+		"SharedFiles": {
+			"Disabled": true
 		}
 	}
 }

@@ -20,8 +20,8 @@
 			"Scopes": "auth"
 		},
 		"Mail": {
+			"UseSortImapForDateMode": true,
 			"AllowDefaultAccountForUser": true,
-			"AllowNewUsersRegister": true,
 			"AutocreateMailAccountOnNewUserFirstLogin": true
 		},
 		"ChangePasswordWebclient": {

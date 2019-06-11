@@ -63,6 +63,9 @@
 		"RecaptchaWebclientPlugin": {
 			"Disabled": true
 		},
+		"MailMasterPassword": {
+			"Disabled": true
+		},
 		"ActiveServer": {
 			"Disabled": true
 		},

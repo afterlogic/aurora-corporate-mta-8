@@ -32,5 +32,13 @@ if ($oCoreDecorator)
 		{
 			die("Error on tables creating\r\n");
 		}
+		else
+		{
+			$mResult = $oCoreDecorator->UpdateConfig();
+				if (!$mResult)
+			{
+				die("Error on config update\r\n");
+			}
+		}
 	}
 }

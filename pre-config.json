@@ -7,6 +7,7 @@
 			"EntitiesOrder": ["Tenant", "Domain", "User", "MailingList"]
 		},
 		"Core": {
+			"SiteName": "Afterlogic Aurora Corporate",
 			"ProductName": "Afterlogic Aurora Corporate"
 		},
 		"CoreWebclient": {

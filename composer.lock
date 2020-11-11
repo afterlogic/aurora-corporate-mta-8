@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "314ea7568be35f92740e2ff9a53f98f6",
+    "content-hash": "160ef07faa0df26d8dc2ef20ebf62aa6",
     "packages": [
         {
             "name": "afterlogic/aurora-dev-tools",
@@ -28,15 +28,15 @@
         },
         {
             "name": "afterlogic/aurora-framework",
-            "version": "0.9.122",
+            "version": "0.9.124",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-framework",
-                "reference": "tags/0.9.122"
+                "reference": "tags/0.9.124"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-framework/archive/0.9.122.zip"
+                "url": "https://github.com/afterlogic/aurora-framework/archive/0.9.124.zip"
             },
             "require": {
                 "afterlogic/mailso": "^1.4",
@@ -53,7 +53,7 @@
                     "Installer.php"
                 ]
             },
-            "time": "2020-10-29T10:31:13+00:00"
+            "time": "2020-11-05T08:07:48+00:00"
         },
         {
             "name": "afterlogic/aurora-module-activeserver",
@@ -76,6 +76,28 @@
                 "installer-name": "ActiveServer"
             },
             "time": "2020-09-02T11:28:47+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-activity-history",
+            "version": "0.9.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-activity-history",
+                "reference": "tags/0.9.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-activity-history/archive/0.9.5.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "ActivityHistory"
+            },
+            "time": "2020-09-04T09:13:59+00:00"
         },
         {
             "name": "afterlogic/aurora-module-admin-auth",
@@ -211,6 +233,28 @@
                 "installer-name": "Core"
             },
             "time": "2020-10-26T14:40:45+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-core-extender",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-core-extender",
+                "reference": "tags/0.9.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-core-extender/archive/0.9.1.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "CoreExtender"
+            },
+            "time": "2020-06-17T11:09:00+00:00"
         },
         {
             "name": "afterlogic/aurora-module-corporate-calendar",
@@ -515,16 +559,41 @@
             "time": "2020-07-06T13:13:56+00:00"
         },
         {
-            "name": "afterlogic/aurora-module-ios",
-            "version": "0.9.14",
+            "name": "afterlogic/aurora-module-import-export-mail-plugin",
+            "version": "0.9.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/afterlogic/aurora-module-ios",
-                "reference": "tags/0.9.14"
+                "url": "https://github.com/afterlogic/aurora-module-import-export-mail-plugin",
+                "reference": "tags/0.9.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-ios/archive/0.9.14.zip"
+                "url": "https://github.com/afterlogic/aurora-module-import-export-mail-plugin/archive/0.9.8.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "afterlogic/aurora-module-mail": "~0.9.0",
+                "afterlogic/aurora-module-webclient-mail": "~0.9.0",
+                "maennchen/zipstream-php": "~0.5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "ImportExportMailPlugin"
+            },
+            "time": "2020-10-30T13:19:56+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-ios",
+            "version": "0.9.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-ios",
+                "reference": "tags/0.9.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-ios/archive/0.9.15.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.9.0",
@@ -535,7 +604,7 @@
             "extra": {
                 "installer-name": "Ios"
             },
-            "time": "2020-10-19T12:05:16+00:00"
+            "time": "2020-11-02T11:29:30+00:00"
         },
         {
             "name": "afterlogic/aurora-module-licensing",
@@ -561,15 +630,15 @@
         },
         {
             "name": "afterlogic/aurora-module-mail",
-            "version": "0.9.97",
+            "version": "0.9.98",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-mail",
-                "reference": "tags/0.9.97"
+                "reference": "tags/0.9.98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-mail/archive/0.9.97.zip"
+                "url": "https://github.com/afterlogic/aurora-module-mail/archive/0.9.98.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.9.0",
@@ -581,7 +650,29 @@
             "extra": {
                 "installer-name": "Mail"
             },
-            "time": "2020-10-30T08:43:57+00:00"
+            "time": "2020-10-30T11:16:37+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-mail-change-password-poppassd-extended-plugin",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-mail-change-password-poppassd-extended-plugin",
+                "reference": "tags/0.9.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-mail-change-password-poppassd-extended-plugin/archive/0.9.1.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "MailChangePasswordPoppassdExtendedPlugin"
+            },
+            "time": "2019-08-23T10:17:03+00:00"
         },
         {
             "name": "afterlogic/aurora-module-mail-change-password-poppassd-plugin",
@@ -873,6 +964,28 @@
             "time": "2020-05-15T08:31:53+00:00"
         },
         {
+            "name": "afterlogic/aurora-module-mobile-webclient-mail-login-form",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-mobile-webclient-mail-login-form",
+                "reference": "tags/0.9.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-mobile-webclient-mail-login-form/archive/0.9.1.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "MailLoginFormMobileWebclient"
+            },
+            "time": "2020-05-12T07:43:42+00:00"
+        },
+        {
             "name": "afterlogic/aurora-module-mobile-webclient-standard-login-form",
             "version": "0.9.3",
             "source": {
@@ -1032,6 +1145,52 @@
             "time": "2020-08-20T09:51:43+00:00"
         },
         {
+            "name": "afterlogic/aurora-module-s3-corporate-filestorage",
+            "version": "0.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-s3-corporate-filestorage",
+                "reference": "tags/0.9.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-s3-corporate-filestorage/archive/0.9.2.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "aws/aws-sdk-php": "3.*",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "S3CorporateFilestorage"
+            },
+            "time": "2019-09-26T08:53:03+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-s3-filestorage",
+            "version": "0.9.27",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-s3-filestorage",
+                "reference": "tags/0.9.27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-s3-filestorage/archive/0.9.27.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "aws/aws-sdk-php": "3.*",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "S3Filestorage"
+            },
+            "time": "2020-09-10T08:12:42+00:00"
+        },
+        {
             "name": "afterlogic/aurora-module-shared-contacts",
             "version": "0.9.11",
             "source": {
@@ -1121,6 +1280,29 @@
                 "installer-name": "TeamContacts"
             },
             "time": "2020-10-03T06:31:03+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-two-factor-auth",
+            "version": "0.9.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-two-factor-auth",
+                "reference": "tags/0.9.23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-two-factor-auth/archive/0.9.23.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "afterlogic/googleauthenticator": "~1.0.2",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "TwoFactorAuth"
+            },
+            "time": "2020-11-02T08:10:52+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-adminpanel",
@@ -1233,15 +1415,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-core",
-            "version": "0.9.101",
+            "version": "0.9.103",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-core",
-                "reference": "tags/0.9.101"
+                "reference": "tags/0.9.103"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-core/archive/0.9.101.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-core/archive/0.9.103.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.9.0",
@@ -1251,7 +1433,7 @@
             "extra": {
                 "installer-name": "CoreWebclient"
             },
-            "time": "2020-09-21T12:18:10+00:00"
+            "time": "2020-11-02T09:12:47+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-core-paranoid-encryption-plugin",
@@ -1606,6 +1788,27 @@
             "time": "2019-12-18T09:01:36+00:00"
         },
         {
+            "name": "afterlogic/aurora-module-webclient-mobile-apps",
+            "version": "0.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-webclient-mobile-apps",
+                "reference": "tags/0.9.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-webclient-mobile-apps/archive/0.9.2.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "MobileAppsWebclient"
+            },
+            "time": "2020-08-21T13:01:39+00:00"
+        },
+        {
             "name": "afterlogic/aurora-module-webclient-mobile-sync",
             "version": "0.9.8",
             "source": {
@@ -1649,15 +1852,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-oauth-integrator",
-            "version": "0.9.22",
+            "version": "0.9.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-oauth-integrator",
-                "reference": "tags/0.9.22"
+                "reference": "tags/0.9.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-oauth-integrator/archive/0.9.22.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-oauth-integrator/archive/0.9.23.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.9.0",
@@ -1667,7 +1870,7 @@
             "extra": {
                 "installer-name": "OAuthIntegratorWebclient"
             },
-            "time": "2020-09-01T13:06:19+00:00"
+            "time": "2020-11-05T17:46:09+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-openpgp",
@@ -1690,6 +1893,30 @@
                 "installer-name": "OpenPgpWebclient"
             },
             "time": "2020-10-21T13:02:57+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-webclient-openpgp-files",
+            "version": "0.9.50",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-webclient-openpgp-files",
+                "reference": "tags/0.9.50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-webclient-openpgp-files/archive/0.9.50.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.9.0",
+                "afterlogic/aurora-module-files": "~0.9.0",
+                "afterlogic/aurora-module-webclient-files": "~0.9.0",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "OpenPgpFilesWebclient"
+            },
+            "time": "2020-10-14T07:50:20+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-outlook-sync",
@@ -1848,6 +2075,53 @@
             "time": "2020-10-29T12:34:51+00:00"
         },
         {
+            "name": "afterlogic/googleauthenticator",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/GoogleAuthenticator.git",
+                "reference": "18aaf69bb1d73ecb6e469017b22539f43b54bad8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afterlogic/GoogleAuthenticator/zipball/18aaf69bb1d73ecb6e469017b22539f43b54bad8",
+                "reference": "18aaf69bb1d73ecb6e469017b22539f43b54bad8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "PHPGangsta/GoogleAuthenticator.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-4-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Kliewe",
+                    "email": "info@phpgangsta.de",
+                    "homepage": "http://www.phpgangsta.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google Authenticator 2-factor authentication",
+            "keywords": [
+                "googleauthenticator",
+                "rfc6238",
+                "totp"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPGangsta/GoogleAuthenticator/issues",
+                "source": "https://github.com/PHPGangsta/GoogleAuthenticator"
+            },
+            "time": "2018-12-07T09:25:54+00:00"
+        },
+        {
             "name": "afterlogic/mailso",
             "version": "1.5.32",
             "source": {
@@ -1891,6 +2165,96 @@
                 "source": "https://github.com/afterlogic/MailSo/tree/1.5.32"
             },
             "time": "2020-10-29T12:36:07+00:00"
+        },
+        {
+            "name": "aws/aws-sdk-php",
+            "version": "3.158.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "a2aba95a428f9e478d08b3f8dc1a70837b46785a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a2aba95a428f9e478d08b3f8dc1a70837b46785a",
+                "reference": "a2aba95a428f9e478d08b3f8dc1a70837b46785a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0",
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4.1",
+                "mtdowling/jmespath.php": "^2.5",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "andrewsville/php-token-reflection": "^1.4",
+                "aws/aws-php-sns-message-validator": "~1.0",
+                "behat/behat": "~3.0",
+                "doctrine/cache": "~1.4",
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-pcntl": "*",
+                "ext-sockets": "*",
+                "nette/neon": "^2.3",
+                "paragonie/random_compat": ">= 2",
+                "phpunit/phpunit": "^4.8.35|^5.4.3",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "sebastian/comparator": "^1.2.3"
+            },
+            "suggest": {
+                "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
+                "doctrine/cache": "To use the DoctrineCacheAdapter",
+                "ext-curl": "To send requests using cURL",
+                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-sockets": "To use client-side monitoring"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aws\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Amazon Web Services",
+                    "homepage": "http://aws.amazon.com"
+                }
+            ],
+            "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
+            "homepage": "http://aws.amazon.com/sdkforphp",
+            "keywords": [
+                "amazon",
+                "aws",
+                "cloud",
+                "dynamodb",
+                "ec2",
+                "glacier",
+                "s3",
+                "sdk"
+            ],
+            "support": {
+                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
+                "issues": "https://github.com/aws/aws-sdk-php/issues",
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.158.21"
+            },
+            "time": "2020-11-05T19:24:22+00:00"
         },
         {
             "name": "composer/installers",
@@ -2572,6 +2936,123 @@
                 "source": "https://github.com/kunalvarma05/dropbox-php-sdk/tree/master"
             },
             "time": "2017-06-26T09:37:16+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "95922b6324955974675fd4923f987faa598408af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/95922b6324955974675fd4923f987faa598408af",
+                "reference": "95922b6324955974675fd4923f987faa598408af",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">= 7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "support": {
+                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/master"
+            },
+            "time": "2018-02-09T09:26:57+00:00"
+        },
+        {
+            "name": "mtdowling/jmespath.php",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmespath/jmespath.php.git",
+                "reference": "42dae2cbd13154083ca6d70099692fef8ca84bfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/42dae2cbd13154083ca6d70099692fef8ca84bfb",
+                "reference": "42dae2cbd13154083ca6d70099692fef8ca84bfb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "composer/xdebug-handler": "^1.4",
+                "phpunit/phpunit": "^4.8.36 || ^7.5.15"
+            },
+            "bin": [
+                "bin/jp.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JmesPath\\": "src/"
+                },
+                "files": [
+                    "src/JmesPath.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Declaratively specify how to extract elements from a JSON document",
+            "keywords": [
+                "json",
+                "jsonpath"
+            ],
+            "support": {
+                "issues": "https://github.com/jmespath/jmespath.php/issues",
+                "source": "https://github.com/jmespath/jmespath.php/tree/2.6.0"
+            },
+            "time": "2020-07-31T21:01:56+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -4074,6 +4555,86 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.20.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-23T14:02:19+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/39d483bdf39be819deabf04ec872eb0b2410b531",
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.20-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.20.0"
             },
             "funding": [
                 {

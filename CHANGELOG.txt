@@ -1,3 +1,29 @@
+[8.5.2]
+[+] Added lang parameter to SSO entry point
+[+] Added ability to insert template into HTML editor on compose screen
+[*] Data directory protection improved
+[*] "Update configuration" now handles main config.json file as well
+[*] Dropbox integration updated
+[*] Various bugfixes
+
+[8.5.1]
+[+] MultipleFilesUploadLimit setting is added
+[+] Uploading directory with subdirectories
+[+] Improvements related to storing PGP keys in Contacts
+[+] Show encryption vector (IV) and AES key in UI
+[+] VCF export includes contact groups now
+[*] Various bugfixes
+
+[8.5.0]
+[+] Added conditional forwarding option for Sieve filters
+[+] Secure shared links functionality
+[+] Paranoid encryption revised, PGP is used now
+[+] Added an option for disabling RTL rendering
+[*] Fixed issue with public links for folders
+[*] Fixed issue with getting iOS profile in mobile layout
+[*] Fixed issue with IMAP and SMTP hosts for external mail clients specified when creating mail server
+[*] Various bugfixes
+
 [8.3.20]
 [*] Minor bugfixes
 
@@ -15,6 +41,16 @@
 [*] PHP 7.3 compatibility issues corrected
 [*] User activity logs were not updated on login
 [*] External links corrected in mobile version
+
+[8.3.16]
+[+] S3 storage is supported for personal and corporate files
+[*] Recaptcha enabled in mobile version now
+[*] Fixed issue with Recaptcha used in mail login form
+[*] Fixed issue with sending mail in mobile version using linked account
+[*] Fixed issue with clicking external link in mobile version
+[*] Public links to files are now correctly retained upon moving the file
+[*] For shared files, owner is now displayed correctly
+[*] Various bugfixes
 
 [8.3.15]
 [*] French and Spanish translations updated

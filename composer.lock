@@ -28,15 +28,15 @@
         },
         {
             "name": "afterlogic/aurora-framework",
-            "version": "0.10.15",
+            "version": "0.10.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-framework",
-                "reference": "tags/0.10.15"
+                "reference": "tags/0.10.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-framework/archive/0.10.15.zip"
+                "url": "https://github.com/afterlogic/aurora-framework/archive/0.10.19.zip"
             },
             "require": {
                 "afterlogic/mailso": "^1.4",
@@ -58,7 +58,7 @@
                     "Installer.php"
                 ]
             },
-            "time": "2021-08-09T08:24:18+00:00"
+            "time": "2021-08-11T09:33:44+00:00"
         },
         {
             "name": "afterlogic/aurora-module-activeserver",
@@ -196,15 +196,15 @@
         },
         {
             "name": "afterlogic/aurora-module-contacts",
-            "version": "0.10.14",
+            "version": "0.10.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-contacts",
-                "reference": "tags/0.10.14"
+                "reference": "tags/0.10.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-contacts/archive/0.10.14.zip"
+                "url": "https://github.com/afterlogic/aurora-module-contacts/archive/0.10.16.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -215,19 +215,19 @@
             "extra": {
                 "installer-name": "Contacts"
             },
-            "time": "2021-08-09T13:29:57+00:00"
+            "time": "2021-08-11T09:42:55+00:00"
         },
         {
             "name": "afterlogic/aurora-module-core",
-            "version": "0.10.11",
+            "version": "0.10.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-core",
-                "reference": "tags/0.10.11"
+                "reference": "tags/0.10.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-core/archive/0.10.11.zip"
+                "url": "https://github.com/afterlogic/aurora-module-core/archive/0.10.12.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -237,7 +237,7 @@
             "extra": {
                 "installer-name": "Core"
             },
-            "time": "2021-08-09T13:30:36+00:00"
+            "time": "2021-08-10T17:56:31+00:00"
         },
         {
             "name": "afterlogic/aurora-module-core-extender",
@@ -657,15 +657,15 @@
         },
         {
             "name": "afterlogic/aurora-module-mail",
-            "version": "0.10.22",
+            "version": "0.10.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-mail",
-                "reference": "tags/0.10.22"
+                "reference": "tags/0.10.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-mail/archive/0.10.22.zip"
+                "url": "https://github.com/afterlogic/aurora-module-mail/archive/0.10.23.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -676,7 +676,7 @@
             "extra": {
                 "installer-name": "Mail"
             },
-            "time": "2021-08-10T08:04:36+00:00"
+            "time": "2021-08-10T13:31:36+00:00"
         },
         {
             "name": "afterlogic/aurora-module-mail-change-password-poppassd-extended-plugin",
@@ -875,7 +875,7 @@
             "extra": {
                 "installer-name": "Min"
             },
-            "time": "2021-08-09T09:35:20+00:00"
+            "time": "2021-08-10T18:37:23+00:00"
         },
         {
             "name": "afterlogic/aurora-module-mobile-sync",
@@ -1081,15 +1081,15 @@
         },
         {
             "name": "afterlogic/aurora-module-office-document-editor",
-            "version": "0.10.1",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-office-document-editor",
-                "reference": "tags/0.10.1"
+                "reference": "tags/0.10.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-office-document-editor/archive/0.10.1.zip"
+                "url": "https://github.com/afterlogic/aurora-module-office-document-editor/archive/0.10.2.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -1099,7 +1099,7 @@
             "extra": {
                 "installer-name": "OfficeDocumentEditor"
             },
-            "time": "2021-07-06T07:10:39+00:00"
+            "time": "2021-08-10T08:56:46+00:00"
         },
         {
             "name": "afterlogic/aurora-module-office-document-viewer",
@@ -1287,15 +1287,15 @@
         },
         {
             "name": "afterlogic/aurora-module-standard-reset-password",
-            "version": "0.10.4",
+            "version": "0.10.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/afterlogic/aurora-module-standard-reset-password",
-                "reference": "tags/0.10.4"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-standard-reset-password",
+                "reference": "tags/0.10.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-standard-reset-password/archive/0.10.4.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-standard-reset-password/archive/0.10.5.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -1306,7 +1306,7 @@
             "extra": {
                 "installer-name": "StandardResetPassword"
             },
-            "time": "2021-07-28T10:54:30+00:00"
+            "time": "2021-08-10T08:57:12+00:00"
         },
         {
             "name": "afterlogic/aurora-module-tasks",
@@ -1379,15 +1379,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-adminpanel",
-            "version": "0.10.10",
+            "version": "0.10.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-adminpanel",
-                "reference": "tags/0.10.10"
+                "reference": "tags/0.10.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-adminpanel/archive/0.10.10.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-adminpanel/archive/0.10.12.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -1397,7 +1397,7 @@
             "extra": {
                 "installer-name": "AdminPanelWebclient"
             },
-            "time": "2021-08-09T13:25:33+00:00"
+            "time": "2021-08-11T10:07:55+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-branding",
@@ -1488,15 +1488,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-core",
-            "version": "0.10.7",
+            "version": "0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-core",
-                "reference": "tags/0.10.7"
+                "reference": "tags/0.10.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-core/archive/0.10.7.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-core/archive/0.10.8.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -1506,7 +1506,7 @@
             "extra": {
                 "installer-name": "CoreWebclient"
             },
-            "time": "2021-08-07T14:04:42+00:00"
+            "time": "2021-08-11T08:43:07+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-core-paranoid-encryption-plugin",
@@ -1711,15 +1711,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-licensing",
-            "version": "0.10.2",
+            "version": "0.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-licensing",
-                "reference": "tags/0.10.2"
+                "reference": "tags/0.10.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-licensing/archive/0.10.2.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-licensing/archive/0.10.3.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0"
@@ -1728,7 +1728,7 @@
             "extra": {
                 "installer-name": "LicensingWebclient"
             },
-            "time": "2021-07-16T11:05:11+00:00"
+            "time": "2021-08-11T07:22:37+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-logs-viewer",
@@ -1947,15 +1947,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-oauth-integrator",
-            "version": "0.10.2",
+            "version": "0.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-oauth-integrator",
-                "reference": "tags/0.10.2"
+                "reference": "tags/0.10.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-oauth-integrator/archive/0.10.2.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-oauth-integrator/archive/0.10.3.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -1965,7 +1965,7 @@
             "extra": {
                 "installer-name": "OAuthIntegratorWebclient"
             },
-            "time": "2021-07-30T08:32:40+00:00"
+            "time": "2021-08-09T09:36:28+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-openpgp",

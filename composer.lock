@@ -497,15 +497,15 @@
         },
         {
             "name": "afterlogic/aurora-module-files-zipfolder",
-            "version": "0.10.0",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-files-zipfolder",
-                "reference": "tags/0.10.0"
+                "reference": "tags/0.10.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-files-zipfolder/archive/0.10.0.zip"
+                "url": "https://github.com/afterlogic/aurora-module-files-zipfolder/archive/0.10.2.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -515,7 +515,7 @@
             "extra": {
                 "installer-name": "FilesZipFolder"
             },
-            "time": "2021-07-01T13:24:34+00:00"
+            "time": "2021-09-15T07:42:40+00:00"
         },
         {
             "name": "afterlogic/aurora-module-gmail-connector",
@@ -1103,15 +1103,15 @@
         },
         {
             "name": "afterlogic/aurora-module-office-document-viewer",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-office-document-viewer",
-                "reference": "tags/0.10.0"
+                "reference": "tags/0.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-office-document-viewer/archive/0.10.0.zip"
+                "url": "https://github.com/afterlogic/aurora-module-office-document-viewer/archive/0.10.1.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -1121,7 +1121,7 @@
             "extra": {
                 "installer-name": "OfficeDocumentViewer"
             },
-            "time": "2021-07-01T13:24:44+00:00"
+            "time": "2021-09-14T12:10:22+00:00"
         },
         {
             "name": "afterlogic/aurora-module-override-user-settings",
@@ -1488,15 +1488,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-core",
-            "version": "0.10.13",
+            "version": "0.10.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-core",
-                "reference": "tags/0.10.13"
+                "reference": "tags/0.10.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-core/archive/0.10.13.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-core/archive/0.10.14.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -1506,7 +1506,7 @@
             "extra": {
                 "installer-name": "CoreWebclient"
             },
-            "time": "2021-09-07T08:13:24+00:00"
+            "time": "2021-09-14T07:44:22+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-core-paranoid-encryption-plugin",

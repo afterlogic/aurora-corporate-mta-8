@@ -115,6 +115,9 @@
 		"MobileAppsWebclient": {
 			"ShowMailServerUrlApp": false,
 			"ShowFilesServerUrlApp": false
+		},
+		"RocketChatWebclient": {
+			"Disabled": true
 		}
 	}
 }

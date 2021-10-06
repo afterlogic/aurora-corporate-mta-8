@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8fe92b819a5c7f9b7326c25f5455ca8",
+    "content-hash": "0ef23e781a217f428ab29dfe04b82748",
     "packages": [
         {
             "name": "afterlogic/aurora-dev-tools",
@@ -2057,6 +2057,28 @@
                 "installer-name": "RecaptchaWebclientPlugin"
             },
             "time": "2021-07-01T13:24:46+00:00"
+        },
+        {
+            "name": "afterlogic/aurora-module-webclient-rocketchat",
+            "version": "0.10.31",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afterlogic/aurora-module-webclient-rocketchat",
+                "reference": "tags/0.10.31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/afterlogic/aurora-module-webclient-rocketchat/archive/0.10.31.zip"
+            },
+            "require": {
+                "afterlogic/aurora-framework": "~0.10.0",
+                "php": ">=5.4.0"
+            },
+            "type": "aurora-module",
+            "extra": {
+                "installer-name": "RocketChatWebclient"
+            },
+            "time": "2021-10-06T10:05:21+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-session-timeout",

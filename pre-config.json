@@ -119,6 +119,9 @@
 		},
 		"RocketChatWebclient": {
 			"Disabled": true
+		},
+		"OfficeDocumentEditor": {
+			"Disabled": true
 		}
 	}
 }

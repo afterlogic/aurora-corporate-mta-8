@@ -219,15 +219,15 @@
         },
         {
             "name": "afterlogic/aurora-module-core",
-            "version": "0.10.34",
+            "version": "0.10.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-core",
-                "reference": "tags/0.10.34"
+                "reference": "tags/0.10.35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-core/archive/0.10.34.zip"
+                "url": "https://github.com/afterlogic/aurora-module-core/archive/0.10.35.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0",
@@ -237,7 +237,7 @@
             "extra": {
                 "installer-name": "Core"
             },
-            "time": "2022-02-21T06:51:36+00:00"
+            "time": "2022-02-22T13:38:56+00:00"
         },
         {
             "name": "afterlogic/aurora-module-core-extender",
@@ -1754,15 +1754,15 @@
         },
         {
             "name": "afterlogic/aurora-module-webclient-mail",
-            "version": "0.10.39",
+            "version": "0.10.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afterlogic/aurora-module-webclient-mail",
-                "reference": "tags/0.10.39"
+                "reference": "tags/0.10.40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/afterlogic/aurora-module-webclient-mail/archive/0.10.39.zip"
+                "url": "https://github.com/afterlogic/aurora-module-webclient-mail/archive/0.10.40.zip"
             },
             "require": {
                 "afterlogic/aurora-framework": "~0.10.0"
@@ -1771,7 +1771,7 @@
             "extra": {
                 "installer-name": "MailWebclient"
             },
-            "time": "2022-02-21T13:14:25+00:00"
+            "time": "2022-02-22T12:51:17+00:00"
         },
         {
             "name": "afterlogic/aurora-module-webclient-mail-login-form",
@@ -2339,8 +2339,8 @@
             "autoload": {
                 "psr-4": {
                     "Sabre\\DAV\\": "lib/DAV/",
-                    "Sabre\\DAVACL\\": "lib/DAVACL/",
                     "Sabre\\CalDAV\\": "lib/CalDAV/",
+                    "Sabre\\DAVACL\\": "lib/DAVACL/",
                     "Sabre\\CardDAV\\": "lib/CardDAV/"
                 }
             },
@@ -3282,12 +3282,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [

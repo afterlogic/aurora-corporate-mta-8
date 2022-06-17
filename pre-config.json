@@ -138,6 +138,9 @@
 		},
 		"RocketChatWebclient": {
 			"Disabled": true
+		},
+		"MailScheduledMessages": {
+			"Disabled": true
 		}
 	}
 }

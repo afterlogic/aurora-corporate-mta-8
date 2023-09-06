@@ -97,6 +97,12 @@
 		"ActiveServer": {
 			"Disabled": true
 		},
+		"SecuritySettingsWebclient": {
+			"Disabled": true
+		},
+		"IPAllowList": {
+			"Disabled": true
+		},
 		"TwoFactorAuth": {
 			"Disabled": true,
 			"FacetIds": [

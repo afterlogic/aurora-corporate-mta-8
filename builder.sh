@@ -7,6 +7,7 @@ NC='\033[0m' # No Color
 
 DIR=$(cd `dirname $0` && pwd)
 DIR_VUE="${DIR}/modules/AdminPanelWebclient/vue"
+DIR_VUE_MOBILE="${DIR}/modules/CoreMobileWebclient/vue-mobile"
 
 TASK="list"
 
@@ -41,6 +42,7 @@ if [ "$TASK" = "list" ]; then
   - build
     - build-main
     - build-admin
+    - build-mobile
   - watch-js
   - watch-styles
   - pack
@@ -56,19 +58,23 @@ echo TASK: "$TASK"
 
 if [ "$TASK" = "npm" ]; then
 	cd ${DIR}
-	
 	npm install
 
 	if [ -d "$DIR_VUE" ]; then
 		cd ${DIR_VUE}
 		npm install
-		npm install -g @quasar/cli
+	fi
+
+	if [ -d "$DIR_VUE_MOBILE" ]; then
+		cd ${DIR_VUE_MOBILE}
+		npm install
 	fi
 fi
 
 if [ "$TASK" = "build" ]; then
 	./builder.sh -t build-main
 	./builder.sh -t build-admin
+	./builder.sh -t build-mobile
 fi
 
 if [ "$TASK" = "build-main" ]; then
@@ -86,6 +92,13 @@ if [ "$TASK" = "build-admin" ]; then
 	fi
 fi
 
+if [ "$TASK" = "build-mobile" ]; then
+	if [ -d "$DIR_VUE_MOBILE" ]; then
+		cd ${DIR_VUE_MOBILE}
+		npm run build-production
+	fi
+fi
+
 if [ "$TASK" = "watch-js" ]; then
 	cd ${DIR}
 	printf "${GREEN}Running watcher for ${RED}JS files\n"$NC
@@ -96,7 +109,7 @@ if [ "$TASK" = "watch-styles" ]; then
 	cd ${DIR}
 	THEME_LIST="$(getThemeList)"
 	printf "${GREEN}Running watcher for themes: ${RED}${THEME_LIST}\n"$NC
-	npm run styles:watch --themes=${THEME_LIST}
+	npm run styles:watch --themes ${THEME_LIST}
 fi
 
 if [ "$TASK" = "pack" ]; then
@@ -124,17 +137,57 @@ if [ "$TASK" = "upload" ]; then
 	curl -v --ftp-create-dirs --retry 6 -T ${PRODUCT_NAME}_${PRODUCT_VERSION}.zip -u ${FTP_USER}:${FTP_PASSWORD} ftp://afterlogic.com/
 fi
 
+if [ "$TASK" = "prepare-demo" ]; then
+	cd ${DIR}
+	
+	printf "Adding extra modules at ${GREEN}${DIR}${NC}...\n"
+	
+	curl -o ${DIR}/extra_modules.txt -u ${FTP_USER}:${FTP_PASSWORD} ftp://afterlogic.com/demo/${PRODUCT_NAME}/extra_modules.txt
+	# wget --no-parent --recursive --level=1 --no-directories --user=${FTP_USER} --password=${FTP_PASSWORD} ftp://afterlogic.com/demo/${PRODUCT_NAME}/
+
+	DEMO_MODULES_FILE="./extra_modules.txt"
+
+	if [ -f "$DEMO_MODULES_FILE" ]; then
+		printf $GREEN"Installing demo modules.\n"$NC
+
+		HAS_DEMO=`cat composer.json | grep -o --max-count=1 demo-mode-plugin`
+
+		if [ "${HAS_DEMO}" = "" ]; then
+			sed -i '/"afterlogic\/aurora-framework".*/r extra_modules.txt' composer.json
+		fi
+
+		# temporarily removing plesk signup module
+		sed -i '/aurora-module-mail-signup-plesk/d' composer.json
+		
+		php composer.phar update afterlogic/aurora-module-demo-mode-plugin
+	else
+		printf $RED"No extra_modules.txt file is found. Skipping this step.\n"$NC
+	fi
+	
+	printf $GREEN"End 'prepare-demo' task\n"$NC
+fi
+
+if [ "$TASK" = "upload-demo" ]; then
+	cd ${DIR}
+	
+	PRODUCT_VERSION=`cat VERSION`
+	
+	echo UPLOAD ZIP FILE: "${PRODUCT_NAME}_${PRODUCT_VERSION}.zip"
+	
+	curl -v --ftp-create-dirs --retry 6 -T ${PRODUCT_NAME}_${PRODUCT_VERSION}.zip -u ${FTP_USER}:${FTP_PASSWORD} ftp://afterlogic.com/demo/
+fi
+
 if [ "$TASK" = "build-documentation" ]; then
 	cd ${DIR}
 
 	PRODUCT_VERSION=`cat VERSION`
-	DOCUMENTATION_FILE=${PRODUCT_NAME}_${PRODUCT_VERSION}_phpdocs.zip
+	DOCUMENTATION_FILE=${PRODUCT_NAME}_${PRODUCT_VERSION}_apigen.zip
 
 	printf "${GREEN}BUILDING DOCUMENTATION\n"$NC
 
 	cd ${DIR}/dev/docs
-	# ./build-apigen.sh
-	./build-phpdoc.sh
+	./build-apigen.sh
+	# ./build-phpdoc.sh
 	
 	printf "${GREEN}PACKING DOCUMENTATION: ${RED}${DOCUMENTATION_FILE}\n"$NC
 	cd ${DIR}/docs/api
